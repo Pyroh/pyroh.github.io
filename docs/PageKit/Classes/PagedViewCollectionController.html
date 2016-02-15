@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PagedViewCollectionController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PagedViewCollectionController" class="dashAnchor"></a>
+    <a title="PagedViewCollectionController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PageKit Docs</a> (76% documented)</p>
+        <p class="header-right"><a href="https://github.com/Pyroh/PageKit"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fpyroh%2Egithub%2Eio%2Fdocsets%2FPageKit%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PageKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PagedViewCollectionController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PageNavigationViewController.html">PageNavigationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PagedViewCollectionController.html">PagedViewCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PagedViewController.html">PagedViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PagedViewCollectionControllerDelegate.html">PagedViewCollectionControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PagedViewCollectionNavigationDelegate.html">PagedViewCollectionNavigationDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PagedViewCollectionController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@IBDesignable</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">PagedViewCollectionController</span><span class="p">:</span> <span class="kt">NSTabViewController</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC7PageKit29PagedViewCollectionController10Transition"></a>
+                    <a name="//apple_ref/swift/Enum/Transition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC7PageKit29PagedViewCollectionController10Transition">Transition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Animations for view transitions in a paged view collection controller.</p>
+
+<ul>
+<li>None:          A transition with no animation.</li>
+<li>Crossfade:     A transition animation that fades the new view in and simultaneously fades the old view out.</li>
+<li>SlideUp:       A transition animation that slides the old view up while the new view comes into view from the bottom. In other words, both views slide up.</li>
+<li>SlideDown:     A transition animation that slides the old view down while the new view slides into view from the top. In other words, both views slide down.</li>
+<li>SlideLeft:     A transition animation that slides the old view to the left while the new view slides into view from the right. In other words, both views slide to the left.</li>
+<li>SlideRight:    A transition animation that slides the old view to the right while the new view slides into view from the left. In other words, both views slide to the right.</li>
+<li>SlideForward:  A transition animation that reflects the user interface layout direction (<code>userInterfaceLayoutDirection</code>) in a “forward” manner, as follows:
+
+<ul>
+<li>For left-to-right user interface layout direction, the <code>SlideLeft</code> animation.</li>
+<li>For right-to-left user interface layout direction, the <code>SlideRight</code> animation.</li>
+</ul></li>
+<li>SlideBackward: A transition animation that reflects the user interface layout direction (<code>userInterfaceLayoutDirection</code>) in a “backward” manner, as follows:
+
+<ul>
+<li>For left-to-right user interface layout direction, the <code>SlideRight</code> animation.</li>
+<li>For right-to-left user interface layout direction, the <code>SlideLeft</code> animation.</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Transition</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController18navigationDelegateXwGSqPS_37PagedViewCollectionNavigationDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/navigationDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController18navigationDelegateXwGSqPS_37PagedViewCollectionNavigationDelegate__">navigationDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The navigation delegate which tells the paged collection controller how to deal with its page navigation view.</p>
+
+<p>This delegate have the highest priority. That means that any of the object property related to the page navigation controller will be overrided by the values found in the delegate. If the delegate doen&rsquo;t provide any usable value the paged view controller will then use its own properties.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBOutlet</span> <span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">navigationDelegate</span><span class="p">:</span> <span class="kt">PagedViewCollectionNavigationDelegate</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController17forwardTransitionOS0_10Transition"></a>
+                    <a name="//apple_ref/swift/Property/forwardTransition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController17forwardTransitionOS0_10Transition">forwardTransition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tell the controller if it should animate transiton to next page.
+- remark: The default value is <code>SlideForward</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">forwardTransition</span><span class="p">:</span> <span class="kt">Transition</span> <span class="o">=</span> <span class="o">.</span><span class="kt">SlideForward</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController18backwardTransitionOS0_10Transition"></a>
+                    <a name="//apple_ref/swift/Property/backwardTransition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController18backwardTransitionOS0_10Transition">backwardTransition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tell the controller if it should animate transiton to previous page.
+- remark: The default value is <code>SlideBackward</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">backwardTransition</span><span class="p">:</span> <span class="kt">Transition</span> <span class="o">=</span> <span class="o">.</span><span class="kt">SlideBackward</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController14homeTransitionOS0_10Transition"></a>
+                    <a name="//apple_ref/swift/Property/homeTransition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController14homeTransitionOS0_10Transition">homeTransition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tell the controller if it should animate transiton back to the first page.
+- remark: The default value is <code>Crossfade</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">homeTransition</span><span class="p">:</span> <span class="kt">Transition</span> <span class="o">=</span> <span class="o">.</span><span class="kt">Crossfade</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController27usePageNavigationControllerSb"></a>
+                    <a name="//apple_ref/swift/Property/usePageNavigationController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController27usePageNavigationControllerSb">usePageNavigationController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If <code>true</code> the default page navigation controller will be used. No page navigation controller will be used otherwise.
+- remark: The default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBInspectable</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">usePageNavigationController</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController22navigationViewPositionOCS_28PageNavigationViewController8Position"></a>
+                    <a name="//apple_ref/swift/Property/navigationViewPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController22navigationViewPositionOCS_28PageNavigationViewController8Position">navigationViewPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If displayed set the position of the page navigation view.
+- remark: The default value is <code>Top</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">navigationViewPosition</span><span class="p">:</span> <span class="kt">PageNavigationViewController</span><span class="o">.</span><span class="kt">Position</span> <span class="o">=</span> <span class="o">.</span><span class="kt">Top</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController20navigationControllerGSqCS_28PageNavigationViewController_"></a>
+                    <a name="//apple_ref/swift/Property/navigationController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController20navigationControllerGSqCS_28PageNavigationViewController_">navigationController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The page navigation controller that will be embeded in each page view.</p>
+
+<p>This property has a higher priority than the <code>navigationID</code> one. Whatever you set here will be used regardless any other properties except the navigation delegate.
+- note: Setting this property will embed a page navigation controller regardless the value of <code><a href="../Classes/PagedViewCollectionController.html#/s:vC7PageKit29PagedViewCollectionController27usePageNavigationControllerSb">usePageNavigationController</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">navigationController</span><span class="p">:</span> <span class="kt">PageNavigationViewController</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController12navigationIdGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/navigationId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController12navigationIdGSqSS_">navigationId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The navigation controller&rsquo;s storyboard ID.</p>
+
+<p>Use this property in order to load the page navigation controller you want to ambed in each page view. If <code><a href="../Classes/PagedViewCollectionController.html#/s:vC7PageKit29PagedViewCollectionController20navigationControllerGSqCS_28PageNavigationViewController_">navigationController</a></code> is set this property will be ignored.
+- note: Setting this property will embed a page navigation controller regardless the value of <code><a href="../Classes/PagedViewCollectionController.html#/s:vC7PageKit29PagedViewCollectionController27usePageNavigationControllerSb">usePageNavigationController</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBInspectable</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">navigationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController21navigationStorybardIdGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/navigationStorybardId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController21navigationStorybardIdGSqSS_">navigationStorybardId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the storyboard containing the navigation controller.</p>
+
+<p>If <code>nil</code> the page navigation controller will try to be loaded from the receiver&rsquo;s storyboard.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBInspectable</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">navigationStorybardId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController12canGoForwardSb"></a>
+                    <a name="//apple_ref/swift/Property/canGoForward" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController12canGoForwardSb">canGoForward</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if the current page has a next page. <code>false</code> otherwise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">canGoForward</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController13canGoBackwardSb"></a>
+                    <a name="//apple_ref/swift/Property/canGoBackward" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController13canGoBackwardSb">canGoBackward</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if the current page has a previous page. <code>false</code> otherwise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">canGoBackward</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController9canGoHomeSb"></a>
+                    <a name="//apple_ref/swift/Property/canGoHome" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController9canGoHomeSb">canGoHome</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if the current page is not the home page. <code>false</code> otherwise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">canGoHome</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController16currentPageIndexSi"></a>
+                    <a name="//apple_ref/swift/Property/currentPageIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController16currentPageIndexSi">currentPageIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current page index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">currentPageIndex</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7PageKit29PagedViewCollectionController9pageCountSi"></a>
+                    <a name="//apple_ref/swift/Property/pageCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7PageKit29PagedViewCollectionController9pageCountSi">pageCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the number of pages.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">dynamic</span> <span class="k">var</span> <span class="nv">pageCount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7PageKit29PagedViewCollectionController9goForwardFS0_FGSqPSs9AnyObject__T_"></a>
+                    <a name="//apple_ref/swift/Method/goForward(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7PageKit29PagedViewCollectionController9goForwardFS0_FGSqPSs9AnyObject__T_">goForward(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display next page if there&rsquo;s any.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">func</span> <span class="nf">goForward</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object that iniated the action.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7PageKit29PagedViewCollectionController10goBackwardFS0_FGSqPSs9AnyObject__T_"></a>
+                    <a name="//apple_ref/swift/Method/goBackward(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7PageKit29PagedViewCollectionController10goBackwardFS0_FGSqPSs9AnyObject__T_">goBackward(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display previous page if there&rsquo;s any</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">func</span> <span class="nf">goBackward</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object that iniated the action.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7PageKit29PagedViewCollectionController6goHomeFS0_FGSqPSs9AnyObject__T_"></a>
+                    <a name="//apple_ref/swift/Method/goHome(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7PageKit29PagedViewCollectionController6goHomeFS0_FGSqPSs9AnyObject__T_">goHome(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return to home page.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">func</span> <span class="nf">goHome</span><span class="p">(</span><span class="nv">sender</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object that iniated the action.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="pyroh.github.io" target="_blank" rel="external">Pierre Tacchi</a>. All rights reserved. (Last updated: 2016-02-15)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

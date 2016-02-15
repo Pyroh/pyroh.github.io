@@ -1,0 +1,18 @@
+PagedViewController.swift
+	public override func viewDidLoad()
+PagedViewCollectionController.swift
+	case None
+	case Crossfade
+	case SlideUp
+	case SlideDown
+	case SlideLeft
+	case SlideRight
+	case SlideForward
+	case SlideBackward
+	@IBOutlet public weak var delegate: PagedViewCollectionControllerDelegate?
+	override public func viewDidLoad()
+	public override func swipeWithEvent(event: NSEvent)
+	public override func tabView(tabView: NSTabView, didSelectTabViewItem tabViewItem: NSTabViewItem?)
+	public override class func keyPathsForValuesAffectingValueForKey(key: String) -> Set<String>
+PageNavigationViewController.swift
+	public enum Position
